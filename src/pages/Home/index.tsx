@@ -5,7 +5,7 @@ import { Wrapper } from "./Home.styles";
 const Home = () => {
   return (
     <Layout>
-      <Wrapper>Home</Wrapper>
+      <Wrapper></Wrapper>
     </Layout>
   );
 };
