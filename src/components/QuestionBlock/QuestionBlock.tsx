@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Wrapper } from "./QuestionBlock.styles";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
-import { IQuestion } from "../../pages/Home";
+import { IQuestion } from "../../data";
 
 interface IProps {
   question: IQuestion;
