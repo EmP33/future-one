@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 85%;
+  max-width: 85%;
   margin: 0 auto;
+
+  @media only screen and (max-width: 900px) {
+    max-width: 95%;
+  }
 `;
