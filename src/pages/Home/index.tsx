@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout/Layout";
 import { PrimaryButton } from "../../Global.styles";
 import { Wrapper } from "./Home.styles";
-import hero from "../../assets/hero.webp";
+import { hero, logo, quote } from "../../assets";
 import QuestionBlock from "../../components/QuestionBlock/QuestionBlock";
 
 export interface IQuestion {
@@ -61,6 +61,32 @@ const Home = () => {
             {questions.map((question) => (
               <QuestionBlock key={question.id} question={question} />
             ))}
+          </div>
+        </section>
+        <section className="quote">
+          <div className="quote__heading">
+            <h2>Bibendum at varius vel pharetra vel turpis nunc eget lorem.</h2>
+          </div>
+          <div className="quote-content">
+            <div className="quoteIcon quoteIcon--1">
+              <img src={quote} alt="quote" />
+            </div>
+            <blockquote>
+              Aliquam purus sit amet luctus venenatis lectus magna. Faucibus
+              purus in massa tempor nec feugiat nisl pretium fusce. Tortor vitae
+              purus faucibus ornare. Neque viverra justo nec ultrices. Nisl nunc
+              mi ipsum faucibus. Tristique risus nec feugiat in fermentum. Elit
+              duis tristique sollicitudin nibh sit amet commodo nulla.
+            </blockquote>
+            <div className="quote-content__footer">
+              <p>Faucibus Vitae, Office Assistant </p>
+              <div className="quoteIcon quoteIcon--2">
+                <img src={quote} alt="quote" />
+              </div>
+            </div>
+            <div className="logo">
+              <img src={logo} alt="invision" />
+            </div>
           </div>
         </section>
       </Wrapper>
