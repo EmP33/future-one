@@ -5,7 +5,8 @@ import { Wrapper } from "./Home.styles";
 import { hero } from "../../assets";
 import QuestionBlock from "../../components/QuestionBlock/QuestionBlock";
 import Quote from "../../components/Quote/Quote";
-import { questions, quote } from "../../data";
+import { categories, questions, quote } from "../../data";
+import CategoryBlock from "../../components/CategoryBlock/CategoryBlock";
 
 const Home = () => {
   return (
@@ -39,6 +40,24 @@ const Home = () => {
           </div>
         </section>
         <Quote quote={quote} />
+        <section className="categories">
+          <h2 className="categories__title">
+            Massa tempor nec feugiat nisl pretium fusce
+          </h2>
+          <p>
+            Pellentesque <strong>habitant</strong> morbi tristique senectus et
+            netus et malesuada. <strong>Ipsum faucibus vitae</strong> aliquet
+            nec ullamcorper sit amet risus nullam. Dictum varius duis at
+            consectetur <strong>lorem donec</strong> massa sapien. Massa tempor
+            nec feugiat nisl pretium fusce.
+          </p>
+          <p>Elit scelerisque mauris pellentesque?</p>
+          <div className="categories-blocks">
+            {categories.map((category) => (
+              <CategoryBlock category={category} />
+            ))}
+          </div>
+        </section>
       </Wrapper>
     </Layout>
   );

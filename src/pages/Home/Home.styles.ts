@@ -80,6 +80,10 @@ export const Wrapper = styled.div`
       margin-top: 4rem;
     }
 
+    @media only screen and (max-width: 600px) {
+      margin: 4rem 0 3rem 0;
+    }
+
     &__title {
       font-size: 2.5rem;
       text-align: center;
@@ -100,6 +104,40 @@ export const Wrapper = styled.div`
       row-gap: 1rem;
       column-gap: 2rem;
       align-items: center;
+    }
+  }
+
+  .categories {
+    padding: 3rem 0;
+    margin-top: 2rem;
+    display: grid;
+    row-gap: 1.5rem;
+
+    &__title {
+      font-weight: bold;
+      font-size: 2.5rem;
+    }
+
+    & p {
+      width: 75%;
+      font-size: 16px;
+      line-height: 24px;
+
+      @media only screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+
+    &-blocks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      column-gap: 6.25rem;
+      row-gap: 5rem;
+
+      @media only screen and (max-width: 955px) {
+        column-gap: 3rem;
+        row-gap: 3rem;
+      }
     }
   }
 `;
