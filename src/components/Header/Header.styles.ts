@@ -5,11 +5,11 @@ export const Wrapper = styled.header`
   display: grid;
   grid-template-columns: max-content 1fr;
   min-height: 100px;
-  margin-top: 2rem;
+  margin-top: 4rem;
 
   @media only screen and (max-width: 1200px) {
     min-height: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .header-logo {
@@ -61,11 +61,15 @@ export const Wrapper = styled.header`
     }
   }
 
-  & svg {
+  & button {
     font-size: 2rem;
     justify-self: end;
     align-self: center;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    border: none;
+    background: transparent;
 
     @media only screen and (min-width: 1200px) {
       display: none;

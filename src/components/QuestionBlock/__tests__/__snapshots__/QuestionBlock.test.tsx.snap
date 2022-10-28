@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<QuestionBlock /> should render properly 1`] = `
+<styled.div
+  showDetails={false}
+>
+  <div
+    className="question-answer"
+  >
+    <span>
+      01
+      .
+    </span>
+    <h3>
+      Example question
+    </h3>
+    <button
+      onClick={[Function]}
+    >
+      <AiOutlinePlus />
+    </button>
+  </div>
+  <div
+    className="hidden-content"
+  >
+    <p>
+      Example Answer
+    </p>
+  </div>
+</styled.div>
+`;

@@ -11,7 +11,9 @@ interface IProps {
 const ResponsiveMenu: React.FC<IProps> = ({ showMenu, toggleShowMenu }) => {
   return (
     <Wrapper showMenu={showMenu}>
-      <IoMdClose onClick={toggleShowMenu} />
+      <button onClick={toggleShowMenu}>
+        <IoMdClose role="button" />
+      </button>
       <ul>
         <li>
           <Link to="/" className="active">
