@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ResponsiveMenu /> should render properly 1`] = `
+<styled.nav
+  showMenu={true}
+>
+  <button
+    onClick={[MockFunction]}
+  >
+    <IoMdClose
+      role="button"
+    />
+  </button>
+  <ul>
+    <li>
+      <Link
+        className="active"
+        to="/"
+      >
+        Overview
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/"
+      >
+        About
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/"
+      >
+        Resources
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/"
+      >
+        Network
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/"
+      >
+        Cloud
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/"
+      >
+        Download
+      </Link>
+    </li>
+    <li>
+      <Link
+        to="/"
+      >
+        Contact
+      </Link>
+    </li>
+  </ul>
+</styled.nav>
+`;

@@ -61,11 +61,15 @@ export const Wrapper = styled.header`
     }
   }
 
-  & svg {
+  & button {
     font-size: 2rem;
     justify-self: end;
     align-self: center;
+    display: flex;
+    align-items: center;
     cursor: pointer;
+    border: none;
+    background: transparent;
 
     @media only screen and (min-width: 1200px) {
       display: none;

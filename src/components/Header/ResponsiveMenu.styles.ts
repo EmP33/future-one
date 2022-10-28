@@ -15,12 +15,23 @@ export const Wrapper = styled.nav<{ showMenu: boolean }>`
   transform: ${({ showMenu }) =>
     showMenu ? "translateX(0)" : "translateX(100%)"};
 
-  & svg {
+  @media only screen and (min-width: 1200px) {
+    display: none;
+  }
+
+  & button {
     font-size: 2rem;
     position: absolute;
-    top: 2.5%;
-    right: 2.5%;
     cursor: pointer;
+    top: 2.25%;
+    right: 5%;
+    border: none;
+    background: transparent;
+
+    @media only screen and (max-width: 900px) {
+      top: 2.5%;
+      right: 2.5%;
+    }
   }
 
   & ul {
@@ -34,6 +45,11 @@ export const Wrapper = styled.nav<{ showMenu: boolean }>`
       text-transform: uppercase;
       padding: 1rem 3rem;
       font-weight: bold;
+      border-bottom: 1px solid var(--color-green);
+
+      &:hover {
+        border-bottom: 1px solid var(--color-text);
+      }
     }
   }
 `;

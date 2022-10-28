@@ -48,7 +48,9 @@ const Header = () => {
           </ul>
           <PrimaryButton to="/">Contact Us</PrimaryButton>
         </nav>
-        <FiMenu onClick={toggleShowMenu} />
+        <button onClick={toggleShowMenu}>
+          <FiMenu />
+        </button>
       </Wrapper>
       {ReactDOM.createPortal(
         <ResponsiveMenu showMenu={showMenu} toggleShowMenu={toggleShowMenu} />,

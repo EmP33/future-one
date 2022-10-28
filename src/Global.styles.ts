@@ -26,8 +26,10 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const PrimaryButton = styled(Link)`
-  padding: 0.4rem 3rem;
+export const PrimaryButton = styled(Link)<{
+  size?: "big" | "normal" | "small";
+}>`
+  padding: ${({ size }) => (size === "big" ? ".75rem 3.5rem" : "0.4rem 3rem")};
   background: var(--color-green);
   color: var(--color-white);
   text-decoration: none;
