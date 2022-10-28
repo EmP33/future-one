@@ -5,11 +5,11 @@ export const Wrapper = styled.header`
   display: grid;
   grid-template-columns: max-content 1fr;
   min-height: 100px;
-  margin-top: 2rem;
+  margin-top: 4rem;
 
   @media only screen and (max-width: 1200px) {
     min-height: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .header-logo {

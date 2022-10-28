@@ -67,4 +67,38 @@ export const Wrapper = styled.div`
       }
     }
   }
+
+  .faq {
+    margin-top: 2.5rem;
+
+    @media only screen and (max-width: 1200px) {
+      margin-top: 1.75rem;
+    }
+
+    @media only screen and (max-width: 900px) {
+      margin-top: 4rem;
+    }
+
+    &__title {
+      font-size: 2.5rem;
+      text-align: center;
+
+      @media only screen and (max-width: 900px) {
+        font-size: 2.25rem;
+      }
+
+      @media only screen and (max-width: 600px) {
+        font-size: 2rem;
+      }
+    }
+
+    &-content {
+      margin: 1rem 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+      column-gap: 2rem;
+      align-items: center;
+    }
+  }
 `;
