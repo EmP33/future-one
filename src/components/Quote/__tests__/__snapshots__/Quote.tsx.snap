@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Quote /> should render properly 1`] = `
+<styled.section>
+  <div
+    className="quote__heading"
+  >
+    <h2>
+      Bibendum at varius vel pharetra vel turpis nunc eget lorem.
+    </h2>
+  </div>
+  <div
+    className="quote-content"
+  >
+    <div
+      className="quoteIcon quoteIcon--1"
+    >
+      <img
+        alt="quote"
+        src="quote.webp"
+      />
+    </div>
+    <blockquote>
+      Aliquam purus sit amet luctus venenatis lectus magna. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Tortor vitae purus faucibus ornare. Neque viverra justo nec ultrices. Nisl nunc mi ipsum faucibus. Tristique risus nec feugiat in fermentum. Elit duis tristique sollicitudin nibh sit amet commodo nulla.
+    </blockquote>
+    <div
+      className="quote-content__footer"
+    >
+      <p>
+        Faucibus Vitae, Office Assistant
+      </p>
+      <div
+        className="quoteIcon quoteIcon--2"
+      >
+        <img
+          alt="quote"
+          src="quote.webp"
+        />
+      </div>
+    </div>
+    <div
+      className="logo"
+    >
+      <img
+        alt="invision"
+        src="logo.webp"
+      />
+    </div>
+  </div>
+</styled.section>
+`;

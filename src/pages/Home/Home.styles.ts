@@ -2,15 +2,16 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   width: 100%;
+  padding-bottom: 10rem; // TO DELETE
 
   .hero {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    height: 70vh;
+    min-height: 70vh;
     align-items: center;
 
     @media only screen and (max-width: 1200px) {
-      height: 80vh;
+      min-height: 80vh;
       grid-template-columns: 1fr 1.5fr;
     }
 
@@ -20,7 +21,7 @@ export const Wrapper = styled.div`
     }
 
     @media only screen and (max-width: 600px) {
-      height: auto;
+      min-height: auto;
       margin-top: 6rem;
     }
 
@@ -69,7 +70,7 @@ export const Wrapper = styled.div`
   }
 
   .faq {
-    margin-top: 2.5rem;
+    margin: 2.5rem 0 3rem 0.75rem;
 
     @media only screen and (max-width: 1200px) {
       margin-top: 1.75rem;

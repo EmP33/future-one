@@ -2,35 +2,10 @@ import React from "react";
 import Layout from "../../components/Layout/Layout";
 import { PrimaryButton } from "../../Global.styles";
 import { Wrapper } from "./Home.styles";
-import hero from "../../assets/hero.webp";
+import { hero } from "../../assets";
 import QuestionBlock from "../../components/QuestionBlock/QuestionBlock";
-
-export interface IQuestion {
-  id: string;
-  question: string;
-  answer: string;
-}
-
-const questions: IQuestion[] = [
-  {
-    id: "01",
-    question: "Arcu non odio",
-    answer:
-      "Sapien nec sagittis aliquam malesuada bibendum. Tempor nec feugiat nisl pretium.",
-  },
-  {
-    id: "02",
-    question: "Eget gravida cum sociis",
-    answer:
-      "Sapien nec sagittis aliquam malesuada bibendum. Tempor nec feugiat nisl pretium.",
-  },
-  {
-    id: "03",
-    question: "Massa massa ultricies ",
-    answer:
-      "Sapien nec sagittis aliquam malesuada bibendum. Tempor nec feugiat nisl pretium.",
-  },
-];
+import Quote from "../../components/Quote/Quote";
+import { questions, quote } from "../../data";
 
 const Home = () => {
   return (
@@ -63,6 +38,7 @@ const Home = () => {
             ))}
           </div>
         </section>
+        <Quote quote={quote} />
       </Wrapper>
     </Layout>
   );
