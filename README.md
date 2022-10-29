@@ -41,7 +41,7 @@ To test application
 
 ## Tech Stack
 
-**Client:** React, Typescript, Styled-Components, AOS, 
+**Client:** React, Typescript, Styled-Components, AOS,
 
 **Testing:** Jest, React-Testing-Library, React-Test-Renderer
 

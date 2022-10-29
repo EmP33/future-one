@@ -15,6 +15,7 @@ exports[`<QuestionBlock /> should render properly 1`] = `
       Example question
     </h3>
     <button
+      aria-label="Expand"
       onClick={[Function]}
     >
       <AiOutlinePlus />

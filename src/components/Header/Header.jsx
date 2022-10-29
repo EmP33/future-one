@@ -17,36 +17,38 @@ const Header = () => {
   return (
     <>
       <Wrapper>
-        <div className="header-logo">
+        <div className="header-logo" data-aos="fade-down">
           <span>Future one</span>
         </div>
         <nav>
           <ul>
-            <li>
+            <li data-aos="fade-down" data-aos-delay={100}>
               <Link to="/" className="active">
                 Overview
               </Link>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay={200}>
               <Link to="/">About</Link>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay={300}>
               <Link to="/">Resources</Link>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay={400}>
               <Link to="/">Network</Link>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay={500}>
               <Link to="/">Cloud</Link>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay={600}>
               <Link to="/">Download</Link>
             </li>
-            <li>
+            <li data-aos="fade-down" data-aos-delay={700}>
               <Link to="/">Contact</Link>
             </li>
           </ul>
-          <PrimaryButton to="/">Contact Us</PrimaryButton>
+          <PrimaryButton to="/" data-aos="fade-left" data-aos-delay={1000}>
+            Contact Us
+          </PrimaryButton>
         </nav>
         <button onClick={toggleShowMenu}>
           <FiMenu />

@@ -14,7 +14,7 @@ const Home = () => {
       <>
         <Wrapper>
           <section className="hero">
-            <div className="hero-action">
+            <div className="hero-action" data-aos="fade-up">
               <h1>
                 <span>Duis aute irure</span> dolor in reprehenderit
               </h1>
@@ -25,14 +25,14 @@ const Home = () => {
                 quis eleifend. Arcu felis bibendum ut tristique et egestas.
               </p>
               <PrimaryButton size="big" to="/">
-                Discover now
+                <span>Discover now</span>
               </PrimaryButton>
             </div>
-            <div className="hero__image-wrapper">
+            <div className="hero__image-wrapper" data-aos="fade-left">
               <img src={hero} alt="smiling woman" width="100%" height="100%" />
             </div>
           </section>
-          <section className="faq">
+          <section className="faq" data-aos="fade-down">
             <h2 className="faq__title">Lacinia quis vel eros tempor orci.</h2>
             <div className="faq-content">
               {questions.map((question) => (
@@ -41,7 +41,7 @@ const Home = () => {
             </div>
           </section>
           <Quote quote={quote} />
-          <section className="categories">
+          <section className="categories" data-aos="fade-down">
             <h2 className="categories__title">
               Massa tempor nec feugiat nisl pretium fusce
             </h2>
@@ -65,7 +65,9 @@ const Home = () => {
             <h2>Subscribe to our newsletter</h2>
             <div className="newsletter-action">
               <input type="text" placeholder="Company e-mail address" />
-              <OutlineButton>Subscribe</OutlineButton>
+              <OutlineButton>
+                <span>Subscribe</span>
+              </OutlineButton>
             </div>
             <p>Chupa chups gummi bears shortbread candy</p>
           </div>

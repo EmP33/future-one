@@ -36,26 +36,31 @@ exports[`<Footer /> should render properly 1`] = `
         className="socials"
       >
         <a
+          aria-label="facebook"
           href="https://www.facebook.com/"
         >
           <AiFillFacebook />
         </a>
         <a
+          aria-label="twitter"
           href="https://twitter.com/"
         >
           <AiOutlineTwitter />
         </a>
         <a
+          aria-label="linkedin"
           href="https://www.linkedin.com/"
         >
           <AiFillLinkedin />
         </a>
         <a
+          aria-label="medium"
           href="https://medium.com/"
         >
           <AiOutlineMedium />
         </a>
         <a
+          aria-label="github"
           href="https://github.com/"
         >
           <AiFillGithub />

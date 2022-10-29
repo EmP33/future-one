@@ -65,6 +65,10 @@ export const Wrapper = styled.footer`
         font-size: 1.6rem;
         color: var(--color-green);
       }
+
+      &:hover {
+        filter: brightness(75%);
+      }
     }
   }
 
