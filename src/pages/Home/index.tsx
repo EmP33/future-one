@@ -55,7 +55,7 @@ const Home = () => {
             <p>Elit scelerisque mauris pellentesque?</p>
             <div className="categories-blocks">
               {categories.map((category) => (
-                <CategoryBlock category={category} />
+                <CategoryBlock key={category.id} category={category} />
               ))}
             </div>
           </section>

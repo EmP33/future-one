@@ -157,7 +157,7 @@ export const Newsletter = styled.section`
   & .newsletter {
     width: 750px;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2.25rem 0;
     display: grid;
     row-gap: 1.5rem;
 
