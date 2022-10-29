@@ -17,7 +17,10 @@ const QuestionBlock: React.FC<IProps> = ({
       <div className="question-answer">
         <span>{id}.</span>
         <h3>{question}</h3>
-        <button onClick={() => setShowDetails((prev) => !prev)}>
+        <button
+          onClick={() => setShowDetails((prev) => !prev)}
+          aria-label="Expand"
+        >
           {showDetails ? <AiOutlineMinus /> : <AiOutlinePlus />}
         </button>
       </div>

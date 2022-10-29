@@ -50,19 +50,19 @@ const Footer = () => {
             <FooterBlock key={block.title} block={block} />
           ))}
           <div className="socials">
-            <a href="https://www.facebook.com/">
+            <a href="https://www.facebook.com/" aria-label="facebook">
               <AiFillFacebook />
             </a>
-            <a href="https://twitter.com/">
+            <a href="https://twitter.com/" aria-label="twitter">
               <AiOutlineTwitter />
             </a>
-            <a href="https://www.linkedin.com/">
+            <a href="https://www.linkedin.com/" aria-label="linkedin">
               <AiFillLinkedin />
             </a>
-            <a href="https://medium.com/">
+            <a href="https://medium.com/" aria-label="medium">
               <AiOutlineMedium />
             </a>
-            <a href="https://github.com/">
+            <a href="https://github.com/" aria-label="github">
               <AiFillGithub />
             </a>
           </div>

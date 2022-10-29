@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Quote /> should render properly 1`] = `
-<styled.section>
+<styled.section
+  data-aos="fade-right"
+>
   <div
     className="quote__heading"
   >
@@ -17,7 +19,9 @@ exports[`<Quote /> should render properly 1`] = `
     >
       <img
         alt="quote"
+        height={32}
         src="quote.webp"
+        width={32}
       />
     </div>
     <blockquote>
@@ -34,7 +38,9 @@ exports[`<Quote /> should render properly 1`] = `
       >
         <img
           alt="quote"
+          height={32}
           src="quote.webp"
+          width={32}
         />
       </div>
     </div>
@@ -43,7 +49,9 @@ exports[`<Quote /> should render properly 1`] = `
     >
       <img
         alt="invision"
+        height={29}
         src="logo.webp"
+        width={86}
       />
     </div>
   </div>
