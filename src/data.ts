@@ -11,6 +11,11 @@ export interface IQuote {
   quoteAuthor: string;
 }
 
+export interface ICategory {
+  id: number;
+  iconName: string;
+}
+
 export const questions: IQuestion[] = [
   {
     id: "01",
@@ -39,3 +44,10 @@ export const quote: IQuote = {
     "Aliquam purus sit amet luctus venenatis lectus magna. Faucibus purus in massa tempor nec feugiat nisl pretium fusce. Tortor vitae purus faucibus ornare. Neque viverra justo nec ultrices. Nisl nunc mi ipsum faucibus. Tristique risus nec feugiat in fermentum. Elit duis tristique sollicitudin nibh sit amet commodo nulla.",
   quoteAuthor: "Faucibus Vitae, Office Assistant",
 };
+
+export const categories: ICategory[] = [
+  { id: 0, iconName: "Lifebuoy" },
+  { id: 1, iconName: "Scissors" },
+  { id: 2, iconName: "Android" },
+  { id: 3, iconName: "Zoom" },
+];

@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<CategoryBlock /> should render properly 1`] = `
+<styled.div>
+  <HiLifebuoy />
+  <span>
+    View details 
+    <BiChevronRight />
+  </span>
+</styled.div>
+`;
