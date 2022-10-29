@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/future-one/static/js/main.1f7d4256.js",
+    "static/js/787.56823d2b.chunk.js": "/future-one/static/js/787.56823d2b.chunk.js",
+    "static/media/hero.webp": "/future-one/static/media/hero.56600b97644ccc2fdc2e.webp",
+    "static/media/logo.webp": "/future-one/static/media/logo.b2cee1d33f6c592a7861.webp",
+    "index.html": "/future-one/index.html",
+    "static/media/quote.webp": "/future-one/static/media/quote.c2c135457b2ecba34cc2.webp",
+    "main.1f7d4256.js.map": "/future-one/static/js/main.1f7d4256.js.map",
+    "787.56823d2b.chunk.js.map": "/future-one/static/js/787.56823d2b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.1f7d4256.js"
+  ]
+}
