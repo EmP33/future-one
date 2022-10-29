@@ -1,8 +1,16 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  width: 100%;
-  padding-bottom: 10rem; // TO DELETE
+  max-width: 85%;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 1200px) {
+    max-width: 90%;
+  }
+
+  @media only screen and (max-width: 900px) {
+    max-width: 95%;
+  }
 
   .hero {
     display: grid;
@@ -139,5 +147,67 @@ export const Wrapper = styled.div`
         row-gap: 3rem;
       }
     }
+  }
+`;
+
+export const Newsletter = styled.section`
+  background: var(--color-green);
+  color: var(--color-white);
+
+  & .newsletter {
+    width: 750px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: grid;
+    row-gap: 1.5rem;
+
+    @media only screen and (max-width: 1200px) {
+      width: 700px;
+    }
+
+    @media only screen and (max-width: 900px) {
+      width: 550px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      width: 95%;
+    }
+  }
+
+  & h2 {
+    font-size: 1.75rem;
+    text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  & .newsletter-action {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    column-gap: 0.75rem;
+    justify-self: stretch;
+
+    @media only screen and (max-width: 500px) {
+      row-gap: 0.75rem;
+      grid-template-columns: 1fr;
+    }
+
+    & input {
+      width: 100%;
+      padding: 1rem;
+      font-size: 14px;
+      color: var(--color-green);
+      border: none;
+
+      &::placeholder {
+        color: var(--color-green);
+      }
+    }
+  }
+
+  & p {
+    text-align: center;
   }
 `;

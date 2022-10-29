@@ -1,15 +1,20 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.header`
-  width: 100%;
+  max-width: 85%;
+  margin: 4rem auto 0;
   display: grid;
   grid-template-columns: max-content 1fr;
   min-height: 100px;
-  margin-top: 4rem;
 
   @media only screen and (max-width: 1200px) {
+    max-width: 90%;
     min-height: 0;
-    margin-top: 2rem;
+    margin: 2rem auto 0;
+  }
+
+  @media only screen and (max-width: 900px) {
+    max-width: 95%;
   }
 
   .header-logo {
