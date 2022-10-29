@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
   }
 
   & svg {
-    font-size: 3rem;
+    font-size: 4rem;
     color: var(--color-light-gray);
   }
 

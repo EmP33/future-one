@@ -26,6 +26,19 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+export const OutlineButton = styled.button`
+  padding: 0.75rem 2.5rem;
+  background: transparent;
+  color: var(--color-white);
+  font-size: 16px;
+  text-decoration: none;
+  border: 2px solid var(--color-white);
+
+  &:hover {
+    filter: brightness(90%);
+  }
+`;
+
 export const PrimaryButton = styled(Link)<{
   size?: "big" | "normal" | "small";
 }>`

@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> should render properly 1`] = `
+<styled.footer>
+  <div
+    className="footer-wrapper"
+  >
+    <div
+      className="footer-content"
+    >
+      <FooterBlock
+        block={
+          Object {
+            "links": Array [
+              "Tiramisu chocolate",
+              "Pastry tart",
+              "Pllipop brownie",
+            ],
+            "title": "Products",
+          }
+        }
+      />
+      <FooterBlock
+        block={
+          Object {
+            "links": Array [
+              "Tiramisu chocolate",
+              "Pastry tart",
+              "Pllipop brownie",
+            ],
+            "title": "Collaboration",
+          }
+        }
+      />
+      <div
+        className="socials"
+      >
+        <a
+          href="https://www.facebook.com/"
+        >
+          <AiFillFacebook />
+        </a>
+        <a
+          href="https://twitter.com/"
+        >
+          <AiOutlineTwitter />
+        </a>
+        <a
+          href="https://www.linkedin.com/"
+        >
+          <AiFillLinkedin />
+        </a>
+        <a
+          href="https://medium.com/"
+        >
+          <AiOutlineMedium />
+        </a>
+        <a
+          href="https://github.com/"
+        >
+          <AiFillGithub />
+        </a>
+      </div>
+    </div>
+    <div
+      className="copyright"
+    >
+      <span>
+        © 2003 - 2022 Carrot cake sweet pie Sp. z o.o. All rights reserved.
+      </span>
+      <Link
+        to="/"
+      >
+        Legal
+      </Link>
+      <Link
+        to="/"
+      >
+        Privacy policy
+      </Link>
+      <Link
+        to="/"
+      >
+        Proud to be Open Source
+      </Link>
+    </div>
+  </div>
+</styled.footer>
+`;

@@ -2,7 +2,7 @@
 
 exports[`<CategoryBlock /> should render properly 1`] = `
 <styled.div>
-  <HiLifebuoy />
+  <Lifebuoy />
   <span>
     View details 
     <BiChevronRight />

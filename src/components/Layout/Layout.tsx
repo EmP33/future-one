@@ -1,6 +1,6 @@
 import React from "react";
+import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import { Wrapper } from "./Layout.styles";
 
 interface IProps {
   children: JSX.Element;
@@ -8,10 +8,11 @@ interface IProps {
 
 const Layout: React.FC<IProps> = ({ children }) => {
   return (
-    <Wrapper>
+    <>
       <Header />
       <main>{children}</main>
-    </Wrapper>
+      <Footer />
+    </>
   );
 };
 
