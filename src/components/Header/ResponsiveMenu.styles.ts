@@ -23,14 +23,14 @@ export const Wrapper = styled.nav<{ showMenu: boolean }>`
     font-size: 2rem;
     position: absolute;
     cursor: pointer;
-    top: 2.25%;
-    right: 5%;
+    top: 4%;
+    right: 5.5%;
     border: none;
     background: transparent;
 
     @media only screen and (max-width: 900px) {
-      top: 2.5%;
-      right: 2.5%;
+      top: 4%;
+      right: 4%;
     }
   }
 
@@ -43,12 +43,23 @@ export const Wrapper = styled.nav<{ showMenu: boolean }>`
       color: var(--color-text);
       text-decoration: none;
       text-transform: uppercase;
+      position: relative;
       padding: 1rem 3rem;
       font-weight: bold;
-      border-bottom: 1px solid var(--color-green);
 
-      &:hover {
-        border-bottom: 1px solid var(--color-text);
+      &:hover::after {
+        width: 100%;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 1px;
+        background-color: var(--color-text);
+        transition: all 0.2s linear;
       }
     }
   }

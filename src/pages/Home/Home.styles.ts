@@ -85,7 +85,7 @@ export const Wrapper = styled.div`
     }
 
     @media only screen and (max-width: 900px) {
-      margin-top: 4rem;
+      margin-top: 6.25rem;
     }
 
     @media only screen and (max-width: 600px) {

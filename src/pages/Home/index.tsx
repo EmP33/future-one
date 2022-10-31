@@ -32,7 +32,7 @@ const Home = () => {
               <img src={hero} alt="smiling woman" width="100%" height="100%" />
             </div>
           </section>
-          <section className="faq" data-aos="fade-down">
+          <section className="faq" data-aos="fade-up">
             <h2 className="faq__title">Lacinia quis vel eros tempor orci.</h2>
             <div className="faq-content">
               {questions.map((question) => (
