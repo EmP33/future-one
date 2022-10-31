@@ -90,7 +90,7 @@ export const PrimaryButton = styled(Link)<{
   background: var(--color-green);
   color: var(--color-white);
   text-decoration: none;
-  z-index: 0;
+  z-index: 100;
   overflow: hidden;
   transition: all 0.15s linear;
   border: 2px solid var(--color-green);
